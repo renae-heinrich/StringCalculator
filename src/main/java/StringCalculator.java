@@ -11,7 +11,7 @@ public class StringCalculator {
 
 
         String[] tokens;
-        String delimiter =  ",|\n|%";
+        String delimiter =  ",|\n|%|#";
         String expressionBody = s;
 
 

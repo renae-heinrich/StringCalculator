@@ -87,4 +87,10 @@ public class StringCalculatorTest {
         Assert.assertEquals(6, calculator.add("//[*][%]\n1*2%3"));
 
     }
+
+    @Test
+    public void inputHandleMultipleDeliminatorsWithALengthLongerThanOneCharacter()  throws Exception{
+
+        Assert.assertEquals(10, calculator.add("//[***][#][%]\n1***2#3%4"));
+    }
 }
