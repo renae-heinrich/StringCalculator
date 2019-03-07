@@ -93,4 +93,10 @@ public class StringCalculatorTest {
 
         Assert.assertEquals(10, calculator.add("//[***][#][%]\n1***2#3%4"));
     }
+
+    @Test
+    public void inputHandleDelimiterThatHaveNumberAsPartOfThemWhereNumberCannotBeOnEdgeOfDelimiter() throws Exception {
+
+        Assert.assertEquals(6, calculator.add("//[*1*][#][%]\n1*1*2%3"));
+    }
 }
